@@ -126,6 +126,160 @@
                     </button>
                     <div id="mobile-shop-menu" class="hidden pl-4">
                         <a href="#" class="block px-3 py-2 text-gray-200 hover:text-white hover:bg-green-700 rounded-md text-sm transition">Dog Food</a>
+                        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Market of Pet Feeds</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .dropdown.active .dropdown-content {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        .rotate-90 {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Mobile Navigation Menu -->
+<div class="md:hidden bg-white shadow-lg rounded-lg m-4 p-2">
+    <!-- Dog Feed Section -->
+    <div class="dropdown mb-1 border-b border-gray-100">
+        <button onclick="toggleDropdown(this)" 
+                class="w-full flex justify-between items-center px-4 py-3 text-gray-700 hover:bg-green-50 rounded-md text-sm font-medium transition">
+            <span class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                🐶 Dog Feed
+            </span>
+            <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        
+        <div class="dropdown-content ml-6">
+            <!-- Dry Dog Food -->
+            <a href="/dog-feed/dry-food" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🍖 Dry Food
+            </a>
+            <!-- Wet Dog Food -->
+            <a href="/dog-feed/wet-food" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🥫 Wet Food
+            </a>
+            <!-- Dog Treats -->
+            <a href="/dog-feed/treats" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🦴 Treats & Snacks
+            </a>
+            <!-- Special Diet -->
+            <a href="/dog-feed/special-diet" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🌱 Special Diet
+            </a>
+            <!-- Puppy Food -->
+            <a href="/dog-feed/puppy" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🐾 Puppy Food
+            </a>
+            <!-- Senior Dog Food -->
+            <a href="/dog-feed/senior" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                👴 Senior Dog Food
+            </a>
+        </div>
+    </div>
+    
+    <!-- Cat Feed Section -->
+    <div class="dropdown mb-1 border-b border-gray-100">
+        <button onclick="toggleDropdown(this)" 
+                class="w-full flex justify-between items-center px-4 py-3 text-gray-700 hover:bg-green-50 rounded-md text-sm font-medium transition">
+            <span class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                🐱 Cat Feed
+            </span>
+            <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        
+        <div class="dropdown-content ml-6">
+            <a href="/cat-feed/dry-food" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🍖 Dry Food
+            </a>
+            <a href="/cat-feed/wet-food" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🥫 Wet Food
+            </a>
+            <a href="/cat-feed/treats" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🐟 Treats
+            </a>
+            <a href="/cat-feed/kitten" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🐱 Kitten Food
+            </a>
+        </div>
+    </div>
+    
+    <!-- Bird Feed Section -->
+    <div class="dropdown mb-1 border-b border-gray-100">
+        <button onclick="toggleDropdown(this)" 
+                class="w-full flex justify-between items-center px-4 py-3 text-gray-700 hover:bg-green-50 rounded-md text-sm font-medium transition">
+            <span class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                🦜 Bird Feed
+            </span>
+            <svg class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        
+        <div class="dropdown-content ml-6">
+            <a href="/bird-feed/seed-mixes" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🌱 Seed Mixes
+            </a>
+            <a href="/bird-feed/pellets" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🟡 Pellets
+            </a>
+            <a href="/bird-feed/treats" class="block px-4 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 transition">
+                🍢 Bird Treats
+            </a>
+        </div>
+    </div>
+    
+    <!-- Other Sections -->
+    <a href="/supplies" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-green-50 rounded-md transition">
+        🛍️ Pet Supplies
+    </a>
+    <a href="/brands" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-green-50 rounded-md transition">
+        🏷️ Our Brands
+    </a>
+    <a href="/about" class="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-green-50 rounded-md transition">
+        ℹ️ About Us
+    </a>
+</div>
+
+<script>
+    // Toggle dropdown items
+    function toggleDropdown(button) {
+        const dropdown = button.parentElement;
+        dropdown.classList.toggle('active');
+        
+        // Rotate the arrow icon
+        const icon = button.querySelector('svg:last-child');
+        icon.classList.toggle('rotate-90');
+    }
+</script>
+
+</body>
+</html>
                         <a href="#" class="block px-3 py-2 text-gray-200 hover:text-white hover:bg-green-700 rounded-md text-sm transition">Cat Food</a>
                         <a href="#" class="block px-3 py-2 text-gray-200 hover:text-white hover:bg-green-700 rounded-md text-sm transition">Bird Feed</a>
                         <a href="#" class="block px-3 py-2 text-gray-200 hover:text-white hover:bg-green-700 rounded-md text-sm transition">All Products</a>
@@ -415,4 +569,5 @@
   });
 </script>
 </body>
+
 </html>
